@@ -1,0 +1,118 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+header div {
+    position: absolute;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: transparent url("/images/header-bg.jpg") left 0px top 20px;
+    background-size: cover;
+    filter: blur(2px);
+}
+
+header nav {
+    border: 2px solid #000;
+    background: rgba(0,0,0,1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul {
+    position: relative;
+    width: 220px;
+    float: right;
+    margin: 10px 100px 10px 0;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 10px;
+    float: left;
+}
+
+header nav ul a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header nav ul a:hover {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 700;
+    color: #fff;
+}
+
+header h1 {
+    position: absolute;
+    top: 33%;
+    left: 40%;
+    text-align: center;
+    margin: 5px auto;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header h2 {
+    position: absolute;
+    bottom: 25%;
+    left: 35%;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    color: #fff;
+    margin: 5px;
+}
+
+header h1 span {
+    border: 5px solid white;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.wrapper > div {
+    margin-bottom: 20px;
+}
+
+.wrapper > div:last-child {
+    margin-bottom: 0;
+}
+
+.wrapper div {
+    padding: 20px;
+}
+
+.wrapper > .odd {
+    background: none repeat scroll 0% 0% #18BC9C;
+    color: #fff;
+}
+
+.wrapper > .even {
+    background: none repeat scroll 0% 0% #2C3E50;
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    height: 20px;
+}
+
+footer .copy-note {
+    width: 120px;
+    margin: 5px auto;
+}
