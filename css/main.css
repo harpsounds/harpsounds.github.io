@@ -5,19 +5,28 @@ body {
 header {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 150px;
     overflow: hidden;
 }
 
-header div {
+header div.background {
     position: absolute;    
     top: 0;
     left: 0;
     width: 100%;
-    height: 300px;
-    background: transparent url("/images/header-bg.jpg") left 0px top 20px;
+    height: 150px;    
+    background: transparent url("/images/header-bg.jpg") left 0px top 0px no-repeat;
     background-size: cover;
-    filter: blur(2px);
+    filter: blur(20px);
+}
+
+header div.logo {
+    position: relative;
+    top: 13px;
+    left: 0;
+    width: 100%;
+    height: 125px;
+    background: transparent url("/images/harp-logo.svg") no-repeat center center;
 }
 
 header nav {
@@ -85,6 +94,14 @@ header h1 span {
     font-size: 1.5em;
 }
 
+.wrapper {
+    background: transparent url("/images/you-have-to-hear-this.png") no-repeat;
+    background-size: cover;
+    border-top: solid 5px rgb(229,91,85);
+    width: 100%;
+    height: 750px;
+}
+
 .wrapper > div {
     margin-bottom: 20px;
 }
@@ -110,6 +127,7 @@ header h1 span {
 footer {
     width: 100%;
     height: 20px;
+    color: #2C3E50;
 }
 
 footer .copy-note {
